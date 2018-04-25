@@ -1,9 +1,8 @@
 function scurvecalc (coeff, start, speed, N) {
-  var budget = Array.from(Array(N).keys())
-  return budget.map(function (each) {
-    each = coeff*Math.log(each + 1)/(1+Math.exp(start - speed * each))
-    return each
-  })
+  var responseCurve = Array(N)
+  for (var i = 0; i < N; i++) {
+    responseCurve[i] = coeff*Math.log(i + 1)/(1+Math.exp(start - speed * i))
+  }
+  return responseCurve
 }
-
 module.exports = scurvecalc
