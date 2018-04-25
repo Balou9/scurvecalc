@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Balou9/scurvecalc/issues"
   },
-  "homepage": "https://github.com/Balou9/scurvecalc#readme"
+  "homepage": "https://github.com/Balou9/scurvecalc#readme",
+  "dependencies": {
+    "tape": "^4.9.0"
+  }
 }
