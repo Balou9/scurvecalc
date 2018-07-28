@@ -1,6 +1,6 @@
 # scurvecalc
 
-[![build status](http://img.shields.io/travis/balou9/scurvecalc.svg?style=flat)](http://travis-ci.org/balou9/scurvecalc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/balou9/scurvecalc?branch=master&svg=true)](https://ci.appveyor.com/project/balou9/scurvecalc)
+[![build status](http://img.shields.io/travis/Balou9/scurvecalc.svg?style=flat)](http://travis-ci.org/Balou9/scurvecalc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Balou9/scurvecalc?branch=master&svg=true)](https://ci.appveyor.com/project/Balou9/scurvecalc)
 
 ***
 
@@ -20,7 +20,10 @@ npm install --save scurvecalc
 
 ``` js
 var scurvecalc = require('scurvecalc')
-var responseCurve = scurvecalc(803243, 7, 0.93939, 150000)
+scurvecalc(803243, 7, 0.93939, 150000, function (err, data) {
+  if (err) throw err
+  console.log(data)
+})
 ```
 
 ***
